@@ -21,7 +21,7 @@ namespace SelassieEsiape_Mission_Assignment2
             //Take Input from user and store it into variable
             rolls = int.Parse(Console.ReadLine());
 
-            // simulate rolling the dice
+            // Simulate rolling the dice together to get a total
             for (int i = 0; i < rolls; i++)
             {
                 int firstDie = r.Next(1, 7);
@@ -31,7 +31,7 @@ namespace SelassieEsiape_Mission_Assignment2
                 // Increment in array position
                 totals[total]++;
             }
-            // print histogram
+            // Print the histogram with * character
             Console.WriteLine("\nDICE ROLLING SIMULATION RESULTS");
 
             Console.WriteLine("Each ' * ' represents 1% of the total number of rolls.");
